@@ -5,7 +5,6 @@ const saveMonitoring = () => {
         }).then((json) => {
             let dt = new Date()
             let infoAccess = {
-                site_name:"reinanbr",
                 ip: json.ip,
                 user_agent: navigator.userAgent,
                 site: window.location.href,

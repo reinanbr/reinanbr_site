@@ -1,7 +1,7 @@
 from flask import render_template,request
 from src.views.home import home_page
 from tools.web.get_info_access import get_access_info
-from tools.db.json import add_access
+#from tools.db.json import add_access_sites_json_db
 
 @home_page.route('/',methods=['get'])
 def index():

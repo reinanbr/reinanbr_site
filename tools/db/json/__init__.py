@@ -1,1 +1,1 @@
-from tools.db.json.db_json import read_json, add_access
+from tools.db.json.db_json import read_access_sites_db_json, add_access_sites_db_json

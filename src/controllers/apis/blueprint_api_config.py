@@ -3,7 +3,7 @@ from flask import request, jsonify
 from datetime import datetime
 import pytz
 from tools.web.get_info_access import get_access_info
-from tools.db.json import add_access
+from tools.db.json import add_access_sites_db_json
 # Defining a blueprint
 api_register = Blueprint('api', __name__,url_prefix='/api')
 
@@ -23,7 +23,7 @@ def get_monitoring_sites_post():
     if response:
         response['date'] = date
         response['hour'] = hour
-        add_access(response)
+        add_access_sites_db_json(response)
         return jsonify({"status":"ok"})
     else:
         return jsonify({"status":"false"})

@@ -4,4 +4,4 @@ import os
 load_dotenv()
 
 
-PATH_JSON_DB = os.getenv('PATH_JSON_DB')
+PATH_ACCESS_SITES_JSON_DB = os.getenv('PATH_ACCESS_SITES_JSON_DB')
